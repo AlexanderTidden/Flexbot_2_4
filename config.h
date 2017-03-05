@@ -36,11 +36,11 @@
     //#define BI
     //#define TRI
     //#define QUADP
-    //#define QUADX
+    #define QUADX
     //#define Y4
     //#define Y6
     //#define HEX6
-    #define HEX6X
+    //#define HEX6X
     //#define HEX6H  // New Model
     //#define OCTOX8
     //#define OCTOFLATP
@@ -453,7 +453,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
          Motor 1-4 = 10-bit hardware PWM
          Motor 5-8 = 10-bit Software PWM
          Servos    = 10-bit Software PWM */
-      #define HWPWM6
+      //#define HWPWM6
 
     /**********************************    Aux 2 Pin     **********************************/
       /* AUX2 pin on pin RXO */
@@ -892,7 +892,7 @@ Also note, that maqgnetic declination changes with time, so recheck your value e
        with R1=33k and R2=51k
        vbat = [0;1023]*16/VBATSCALE
        must be associated with #define BUZZER ! */
-    #define VBAT              // uncomment this line to activate the vbat code
+    //#define VBAT              // uncomment this line to activate the vbat code
     #define VBATSCALE       64 // (*) (**) change this value if readed Battery voltage is different than real voltage
     #define VBATNOMINAL     126 // 12,6V full battery nominal voltage - only used for lcd.telemetry
     #define VBATLEVEL_WARN1 189 // (*) (**) 10,7V
